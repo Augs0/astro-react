@@ -1,30 +1,35 @@
 import React, { useEffect, useState } from 'react'
 
-function Signs() {
+function Horoscope(props) {
     const [info, setSigns] = useState({});
     const { sign, date, horoscope } = info;
-    const current = 'pisces'
 
-    //pass in user sign
-    const getData = async () => {
+    const { current } = props;
+
+    //need error handling
+    useEffect(() => {
         const proxy = 'https://cors-anywhere.herokuapp.com/';
         const target = `http://ohmanda.com/api/horoscope/${current}`
-        const response = await fetch(proxy + target);
-        const data = await response.json();
-        setSigns(data);
-    }
+        fetch(proxy + target)
+            .then(res => res.json())
+            .then(data => setSigns(data))
+    }, [current])
 
-    useEffect(() => {
-        getData();
-    }, [])
 
-    return (
-        <>
+    if (current === undefined) {
+        return <p>Select your sign</p>;
+    } else {
+        return <>
             <h2 className="sign">{sign}</h2>
             <p>{date}</p>
             <p>{horoscope}</p>
         </>
-    )
+    }
+
 }
 
-export default Signs
+Horoscope.defaultProps = {
+    current: "aries"
+}
+
+export default Horoscope

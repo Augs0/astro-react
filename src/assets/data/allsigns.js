@@ -16,62 +16,62 @@ import pisces from '../img/pisces.png';
 export default [
     {
         "id": 1,
-        "name": "Aries",
+        "name": "aries",
         "image": aries
     },
     {
         "id": 2,
-        "name": "Taurus",
+        "name": "taurus",
         "image": taurus
     },
     {
         "id": 3,
-        "name": "Gemini",
+        "name": "gemini",
         "image": gemini
     },
     {
         "id": 4,
-        "name": "Cancer",
+        "name": "cancer",
         "image": cancer
     },
     {
         "id": 5,
-        "name": "Leo",
+        "name": "leo",
         "image": leo
     },
     {
         "id": 6,
-        "name": "Virgo",
+        "name": "virgo",
         "image": virgo
     },
     {
         "id": 7,
-        "name": "Libra",
+        "name": "libra",
         "image": libra
     },
     {
         "id": 8,
-        "name": "Scorpio",
+        "name": "scorpio",
         "image": scorpio
     },
     {
         "id": 9,
-        "name": "Sagittarius",
+        "name": "sagittarius",
         "image": sagittarius
     },
     {
         "id": 10,
-        "name": "Capricorn",
+        "name": "capricorn",
         "image": capricorn
     },
     {
         "id": 11,
-        "name": "Aquarius",
+        "name": "aquarius",
         "image": aquarius
     },
     {
         "id": 12,
-        "name": "Pisces",
+        "name": "pisces",
         "image": pisces
     }
 ]
