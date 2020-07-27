@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import allSigns from '../assets/data/allsigns'
 
 function Horoscope(props) {
     const [info, setSigns] = useState({});
@@ -23,6 +24,18 @@ function Horoscope(props) {
             <h2 className="sign">{sign}</h2>
             <p>{date}</p>
             <p>{horoscope}</p>
+            <div className="comp-wrapper">
+                {allSigns.map((sign) => {
+                    if (current === sign.name) {
+                        return <div key={sign.id} className="comp-container">
+                            <p>Best matches: {sign.best}</p>
+                            <p>Worst matches: {sign.worst}</p>
+                        </div>
+                    } else {
+                        return null
+                    }
+
+                })}</div>
         </>
     }
 
