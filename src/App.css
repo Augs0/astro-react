@@ -94,3 +94,34 @@ h1, h2{
   text-transform: capitalize;
   font-size:2rem;
 }
+
+.white button{
+  background:transparent;
+  padding:5px;
+  border:darkslategray 1px solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.white button:hover{
+  background:darkslategray;
+  color:whitesmoke;
+  cursor:pointer;
+}
+
+.white .horoscope, .white .best, .white .worst{
+  letter-spacing: 2px;
+}
+
+.white .best{
+  width:120px;
+  border-bottom:5px solid blueviolet;
+}
+
+.white .worst{
+  width:120px;
+  border-bottom: 5px solid orangered;
+}
