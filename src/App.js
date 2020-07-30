@@ -9,7 +9,7 @@ function App() {
   let current = currentSign
 
   return (
-    <>
+    <div className="container">
       <div className="black">
         <h2>Zodiac Signs</h2>
         <div className="sign-wrapper">
@@ -26,7 +26,7 @@ function App() {
         <h2>Horoscope</h2>
         <Horoscope current={current} />
       </div>
-    </>
+    </div>
   );
 }
 

@@ -35,7 +35,7 @@ function Horoscope(props) {
         return <>
             <h2 className="sign">{sign}</h2>
             <p>{date}</p>
-            <p class="horoscope">{horoscope}</p>
+            <p className="horoscope">{horoscope}</p>
             <button onClick={handleClick}>{match === true ? 'Hide matches' : 'View matches'}</button>
             {match === true ?
                 allSigns.map((sign) => {
